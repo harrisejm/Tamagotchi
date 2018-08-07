@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export class Tamagotchi {
   constructor(foodLevel, playLevel, restLevel) {
     this.foodLevel = foodLevel;
@@ -28,17 +30,17 @@ export class Tamagotchi {
   //////////////////
   getFood() {
     let that = this;
-    document.getElementById("test").innerHTML = that.foodLevel;
+    $("#test").text(that.foodLevel);
     return that.foodLevel;
   }
   getPlay() {
     let that = this;
-    document.getElementById("test1").innerHTML = that.playLevel;
+  $("#test1").text(that.playLevel);
     return that.playLevel;
   }
   getRest(){
     let that = this;
-    document.getElementById("test2").innerHTML = that.restLevel;
+    $("#test2").text(that.restLevel);
     return that.restLevel;
   }
   /////////////////////
@@ -53,13 +55,13 @@ export class Tamagotchi {
   }
   /////////////////////////
   deadFood() {
-    document.getElementById("test3").innerHTML = "Dead by food";
+    $("#test3").text("Dead by food");
   }
   deadPlay() {
-    document.getElementById("test3").innerHTML = "Dead by bus or something";
+    $("#test3").text("Dead by bus or something");
   }
   deadRest() {
-    document.getElementById("test3").innerHTML = "Deaddddd by sleep";
+    $("#test3").text("Deaddddd by sleep");
   }
 
 
