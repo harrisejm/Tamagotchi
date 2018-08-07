@@ -2,7 +2,6 @@ import { Tamagotchi } from './Tamagotchi';
 import $ from 'jquery';
 import './styles.css';
 
-
 $(document).ready(function() {
   const newPet = new Tamagotchi(100, 100, 100);
 
@@ -36,11 +35,7 @@ $(document).ready(function() {
     $('#hard').hide();
     $('#extreme').hide();
   });
-
-
-
-
-
+///////////
   $('#food').click(function() {
     newPet.addFood();
   });
@@ -50,19 +45,5 @@ $(document).ready(function() {
   $('#sleep').click(function() {
     newPet.addRest();
   });
- //
-  //$("#test").text(newPet.getFood());
- //
- //  $("#test1").text(newPet.getPlay());
- //
- //  $("#test2").text(newPet.getRest());
- // //$(".test3").text(newPet.getRest());
-
-//document.getElementById("test").innerHTML;
-//document.getElementById("test1").innerHTML;
-//document.getElementById("test2").innerHTML;
-
-//document.getElementById("test").innerHTML = newPet.getFood();
 
 });
-//document.getElementById("test").innerHTML = newPet.getFood();
