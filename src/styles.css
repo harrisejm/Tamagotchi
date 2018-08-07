@@ -5,8 +5,31 @@ span {
 
 p {
   font-size: 45px;
-  color: blue;
+  color: red;
 }
-button {
+button#food, button#play, button#sleep {
   font-size: 45px;
 }
+
+
+button#easy, button#normal, button#hard, button#extreme {
+     text-align: center;
+     display: inline-block;
+     font-size: 20px;
+     margin: 6px;
+     -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     font-family: times;
+     width: 110px;
+     background-color: black;
+     opacity: 0.7;
+     color: red;
+     border: 2px solid white;
+ }
+
+ button:hover {
+     background-color: red;
+     color: black;
+     box-shadow: 4px 4px 4px black;
+ }
